@@ -1,0 +1,104 @@
+{
+  "cars": [
+    {
+      "id": "1",
+      "title": "Toyota GR Supra",
+      "manufacturer": "Toyota",
+      "class": "Sports car",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Toyota_Supra_Monrepos_2019_IMG_1898.jpg/1200px-Toyota_Supra_Monrepos_2019_IMG_1898.jpg",
+      "passenger_capacity": 2,
+      "description": "The Toyota GR Supra (model code J29/DB or A90/A91 for marketing purposes) is a sports car produced by Toyota since 2019.",
+      "transmission_type": "Automatic/Manual"
+    },
+    {
+      "id": "2",
+      "title": "Lamborghini Murciélago",
+      "manufacturer": "Lamborghini",
+      "class": "Sports car",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Lamborghini_Murci%C3%A9lago_LP-640_-_Flickr_-_Alexandre_Pr%C3%A9vot_%2840%29.jpg/280px-Lamborghini_Murci%C3%A9lago_LP-640_-_Flickr_-_Alexandre_Pr%C3%A9vot_%2840%29.jpg",
+      "passenger_capacity": 2,
+      "description": "The Lamborghini Murciélago is a sports car produced by Italian automotive manufacturer Lamborghini between 2001[9] and 2010. Successor to the Diablo and flagship V12 of the automaker's lineup, the Murciélago was introduced as a coupé in 2001.",
+      "transmission_type": "Manual"
+    },
+    {
+      "id": "3",
+      "title": "Audi R8",
+      "manufacturer": "Audi",
+      "class": "Sports car",
+      "image": "https://en.wikipedia.org/wiki/File:R8_Coupe_V10_performance-1.jpg",
+      "passenger_capacity": 2,
+      "description": "The Audi R8 is a mid-engine, 2-seater sports car, which uses Audi's trademark quattro permanent all-wheel drive system. It was introduced by the German car manufacturer Audi AG in 2006. Production ended in the first quarter of 2024.",
+      "transmission_type": "Automatic"
+    },
+    {
+      "id": "4",
+      "title": "Bugatti Chiron",
+      "manufacturer": "Bugatti Automobiles S.A.S.",
+      "class": "Sports car",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Bugatti_Chiron_1.jpg/280px-Bugatti_Chiron_1.jpg",
+      "passenger_capacity": 2,
+      "description": "The Bugatti Chiron is a mid-engine two-seater sports car designed and developed in Germany by Bugatti Engineering GmbH and manufactured in Molsheim, France, by French automobile manufacturer Bugatti Automobiles S.A.S.",
+      "transmission_type": "Automatic"
+    },
+    {
+      "id": "5",
+      "title": "Chevrolet Camaro",
+      "manufacturer": "Chevrolet",
+      "class": "Sports car",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/2019_Chevrolet_Camaro_2SS_6.2L_front_3.16.19.jpg/280px-2019_Chevrolet_Camaro_2SS_6.2L_front_3.16.19.jpg",
+      "passenger_capacity": 4,
+      "description": "The Chevrolet Camaro is a mid-size American automobile manufactured by Chevrolet, classified as a pony car.",
+      "transmission_type": "Manual"
+    },
+    {
+      "id": "6",
+      "title": "Rolls-Royce Ghost",
+      "manufacturer": "Rolls-Royce Motor Cars",
+      "class": "Luxury car",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/2022_Rolls-Royce_Ghost_Black_Badge_in_Arctic_White%2C_front_left.jpg/280px-2022_Rolls-Royce_Ghost_Black_Badge_in_Arctic_White%2C_front_left.jpg",
+      "passenger_capacity": 5,
+      "description": "The Rolls-Royce Ghost is a full-sized luxury car manufactured by Rolls-Royce Motor Cars. It was designed as a smaller, "more measured, more realistic car" than the Phantom, aiming for a lower price category for Rolls-Royce models.",
+      "transmission_type": "Automatic"
+    },
+    {
+      "id": "7",
+      "title": "Bentley Continental GT",
+      "manufacturer": "Bentley",
+      "class": "Grand tourer",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Bentley_Continental_GT_First_Edition_%2849919050697%29_%28cropped%29_%28cropped%29.jpg/280px-Bentley_Continental_GT_First_Edition_%2849919050697%29_%28cropped%29_%28cropped%29.jpg",
+      "passenger_capacity": 5,
+      "description": "The Bentley Continental GT is a grand touring car manufactured and marketed by the British company Bentley Motors since 2003.",
+      "transmission_type": "Automatic"
+    },
+    {
+      "id": "8",
+     "title": "Porsche 918 Spyder",
+     "manufacturer": "	Porsche AG",
+      "class": "Sports car",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Porsche_918_Spyder_IAA_2013.jpg/280px-Porsche_918_Spyder_IAA_2013.jpg",
+      "passenger_capacity": 2,
+      "description": "The Porsche 918 Spyder is a high performance sports car manufactured by German marque Porsche.",
+      "transmission_type": "Automatic/Manual"
+    },
+    {
+      "id": "9",
+      "title": "BMW 2 Series (G42)",
+      "manufacturer": "BMW ",
+      "class": "Subcompact executive car",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/BMW_G42_1X7A0370.jpg/280px-BMW_G42_1X7A0370.jpg",
+      "passenger_capacity": 5,
+      "description": "The BMW 2 Series (G42) is the second generation of the BMW 2 Series subcompact executive coupé, the successor in 2021 to the F22 2 Series coupé and convertible.",
+      "transmission_type": "Automatic/Manual"
+    },
+    {
+      "id": "10",
+      "title": "Ferrari F40",
+      "manufacturer": "Ferrari S.p.A.",
+      "class": "Sports car",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/F40_Ferrari_20090509.jpg/280px-F40_Ferrari_20090509.jpg",
+      "passenger_capacity": 2,
+      "description": "The Ferrari F40 (Type F120) is a mid-engine, rear-wheel drive sports car[12] engineered by Nicola Materazzi with styling by Pininfarina. ",
+      "transmission_type": "Manual"
+    }
+    ]
+}
