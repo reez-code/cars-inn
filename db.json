@@ -57,7 +57,7 @@
       "class": "Luxury car",
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/2022_Rolls-Royce_Ghost_Black_Badge_in_Arctic_White%2C_front_left.jpg/280px-2022_Rolls-Royce_Ghost_Black_Badge_in_Arctic_White%2C_front_left.jpg",
       "passenger_capacity": 5,
-      "description": "The Rolls-Royce Ghost is a full-sized luxury car manufactured by Rolls-Royce Motor Cars. It was designed as a smaller, "more measured, more realistic car" than the Phantom, aiming for a lower price category for Rolls-Royce models.",
+      "description": "The Rolls-Royce Ghost is a full-sized luxury car manufactured by Rolls-Royce Motor Cars. It was designed as a smaller, more measured, more realistic car than the Phantom, aiming for a lower price category for Rolls-Royce models.",
       "transmission_type": "Automatic"
     },
     {
@@ -72,8 +72,8 @@
     },
     {
       "id": "8",
-     "title": "Porsche 918 Spyder",
-     "manufacturer": "	Porsche AG",
+      "title": "Porsche 918 Spyder",
+      "manufacturer": "Porsche AG",
       "class": "Sports car",
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Porsche_918_Spyder_IAA_2013.jpg/280px-Porsche_918_Spyder_IAA_2013.jpg",
       "passenger_capacity": 2,
@@ -100,5 +100,5 @@
       "description": "The Ferrari F40 (Type F120) is a mid-engine, rear-wheel drive sports car[12] engineered by Nicola Materazzi with styling by Pininfarina. ",
       "transmission_type": "Manual"
     }
-    ]
+  ]
 }
