@@ -1,3 +1,5 @@
+import "bootstrap/dist/css/bootstrap.min.css";
+
 function App() {
   return (
     <div className="container py-4 px-3 mx-auto">
