@@ -1,10 +1,5 @@
 function App() {
-  return (
-    <div className="container py-4 px-3 mx-auto">
-      <h1>Hello, Bootstrap and Vite!</h1>
-      <button className="btn btn-primary">Primary button</button>
-    </div>
-  );
+  return <h1 className="text-3xl font-bold underline">Hello world!</h1>;
 }
 
 export default App;
