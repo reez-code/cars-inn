@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import Collection from "./components/Collection";
 
 function App() {
   const [cars, setCars] = useState([]);
@@ -8,7 +9,7 @@ function App() {
       .then((data) => setCars(data));
   }, []);
   console.log(cars);
-  return <h1 className="text-3xl font-bold underline">Hello world!</h1>;
+  return <Collection cars={cars} />;
 }
 
 export default App;
