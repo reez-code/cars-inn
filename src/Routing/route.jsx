@@ -2,17 +2,17 @@
 import { createBrowserRouter } from "react-router-dom";
 import Home from "./Home";
 import Library from "./Library";
-import AddCar from "./AddCar";
+import LandingPage from "./LandingPage";
 
 
 const router = createBrowserRouter([
     {
         path: '/',
-        element: <Home/>
+        element: <LandingPage/>
     },
     {
-        path: '/AddCar',
-        element: <AddCar/>
+        path: '/Home',
+        element: <Home/>
     },
     {
         path: '/Library',
