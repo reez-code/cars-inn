@@ -1,24 +1,15 @@
-import React, { useEffect, useState } from 'react';
+import React, {useState } from 'react';
 import searchIcon from '../images/search-b.png';
 
-function SearchBar() {
-  const [cars, setCars] = useState([]);
+function SearchBar({onSearch}) {
+  
   const [searchTerm, setSearchTerm] = useState('');
-
-  useEffect(() => {
-    fetch('http://localhost:3000/cars')
-     .then((response) => response.json())
-     .then((data) => setCars(data))
-     .catch((error) => { console.error('Error in fetching data' , error)})
-  }, []);
-
+ 
   const handleSearch = (e) => {
+    e.preventDefault()
+    onSearch(searchTerm)
     setSearchTerm(e.target.value);
   };
-
-  const filteredCars = cars.filter((car) => {
-    return car.title.toLowerCase().includes(searchTerm.toLowerCase());
-  });
 
   return (
     <div>
