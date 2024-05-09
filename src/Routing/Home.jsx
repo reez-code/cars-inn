@@ -1,23 +1,26 @@
 import { useEffect, useState } from "react";
 import Collection from "../components/Collection";
 import Navbar from "../components/Navbar";
-
+import Add from "../components/Add";
 
 function Home() {
-    const [cars, setCars] = useState([]);
-    useEffect(() => {
-      fetch("http://localhost:3000/cars")
-        .then((res) => res.json())
-        .then((data) => setCars(data));
-    }, []);
-    console.log(cars);
-    return( 
-      <div>
-        <Navbar/>
-        <Collection cars={cars} />;
-      </div>
-    
-  )
+  const [cars, setCars] = useState([]);
+  useEffect(() => {
+    fetch("http://localhost:3000/cars")
+      .then((res) => res.json())
+      .then((data) => setCars(data));
+  }, []);
+
+  function addCars(carsObj) {
+    setCars([...cars, carsObj]);
+  }
+  return (
+    <div>
+      <Navbar />
+      <Add addCars={addCars} />
+      <Collection cars={cars} />;
+    </div>
+  );
 }
 
-export default Home
+export default Home;
