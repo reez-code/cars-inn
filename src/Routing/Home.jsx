@@ -1,12 +1,15 @@
 import { useEffect, useState } from "react";
 import Collection from "../components/Collection";
 import Navbar from "../components/Navbar";
+import Add from "../components/Add";
 
-
-function Home() {
+function Home(){
   const [searchTerm, setSearchTerm] = useState("");
   const [cars, setCars] = useState([]);
 
+  function addCars(carsObj) {
+    setCars([...cars, carsObj]);
+  }
   useEffect(() => {
     fetch("http://localhost:3000/cars",{
 			method: 'GET',
@@ -30,9 +33,11 @@ function Home() {
   return (
     <div>
       <Navbar onSearch={handleSearch}/>
+      <Add addCars={addCars} />
       <Collection cars={filteredCars} />
     </div>
   )
+
 }
 
-export default Home
+export default Home;
