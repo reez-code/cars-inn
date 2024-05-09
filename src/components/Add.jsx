@@ -13,6 +13,7 @@ function Add({ addCars }) {
   )(10);
   function handleSubmit(event) {
     event.preventDefault();
+
     const formData = {
       id: getNextId(),
       image: image,
@@ -36,7 +37,7 @@ function Add({ addCars }) {
                 type="text"
                 id="title"
                 placeholder="Title"
-                className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset  sm:text-sm sm:leading-6"
                 value={title}
                 onChange={(e) => setTitle(e.target.value)}
               />
@@ -48,7 +49,7 @@ function Add({ addCars }) {
                 type="text"
                 id="description"
                 placeholder="Description"
-                className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset  sm:text-sm sm:leading-6"
                 value={description}
                 onChange={(e) => setDescription(e.target.value)}
               />
@@ -60,7 +61,7 @@ function Add({ addCars }) {
                 type="text"
                 id="image"
                 placeholder="Insert Image URL"
-                className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset  sm:text-sm sm:leading-6"
                 value={image}
                 onChange={(e) => setImage(e.target.value)}
               />
