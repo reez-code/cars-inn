@@ -22,7 +22,7 @@ function Add({ addCars }) {
     };
     addCars(formData);
   }
-  console.log(image);
+
   return (
     <>
       <form onSubmit={handleSubmit}>

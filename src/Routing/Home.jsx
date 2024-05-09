@@ -10,7 +10,7 @@ function Home() {
       .then((res) => res.json())
       .then((data) => setCars(data));
   }, []);
-  console.log(cars);
+
   function addCars(carsObj) {
     setCars([...cars, carsObj]);
   }
