@@ -1,8 +1,8 @@
 import React, { useRef, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import YouTube from "react-youtube";
+import ReactPlayer from "react-player";
 
-function Landing({ videoUrl }) {
+function Landing() {
   const navigate = useNavigate();
   const videoContainerRef = useRef(null); // Ref for the container surrounding the video
 
@@ -33,19 +33,15 @@ function Landing({ videoUrl }) {
   }, []); // Empty dependency array ensures that the effect runs only once
 
   return (
-    <div className="flex justify-center items-center h-screen">
-      <div className="max-w-3xl w-full" ref={videoContainerRef}>
-        <YouTube
-          videoId={videoUrl} // Extract video id from YouTube URL
-          opts={{
-            width: "100%",
-            playerVars: {
-              autoplay: 1,
-              controls: 1,
-              loop: 0,
-            },
-          }}
-          onEnd={handleVideoEnded}
+    <div className="fixed top-0 left-0 w-screen h-screen flex justify-center items-center bg-black">
+      <div className="w-full h-full" ref={videoContainerRef}>
+        <ReactPlayer
+          url="https://youtu.be/PqaIkG4WEo8?si=RhEb0oCXkd4NI4yK"
+          width="100vw"
+          height="100vh"
+          controls
+          playing
+          onEnded={handleVideoEnded}
         />
       </div>
     </div>
