@@ -34,17 +34,18 @@ function Landing() {
 
   return (
     <div className="fixed top-0 left-0 w-screen h-screen flex justify-center items-center bg-black">
-      <div className="w-full h-full" ref={videoContainerRef}>
+      <div className="w-85 h-85" ref={videoContainerRef}>
         <ReactPlayer
           url="https://youtu.be/PqaIkG4WEo8?si=RhEb0oCXkd4NI4yK"
-          width="100vw"
-          height="100vh"
-          controls
-          playing
+          width="90vw"
+          height="90vh"
+          controls={false}
+          playing={true}
           onEnded={handleVideoEnded}
         />
       </div>
     </div>
+    
   );
 }
 
