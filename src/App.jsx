@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import Collection from "./components/Collection";
 import Navbar from "./components/Navbar";
 
-
 function App() {
   const [cars, setCars] = useState([]);
   useEffect(() => {
@@ -11,13 +10,13 @@ function App() {
       .then((data) => setCars(data));
   }, []);
   console.log(cars);
-  return( 
+
+  return (
     <div>
-      <Navbar/>
+      <Navbar />
       <Collection cars={cars} />;
     </div>
-  
-)
+  );
 }
 
 export default App;

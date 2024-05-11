@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
+import Landing from "../components/Landing";
 
 function LandingPage() {
   return (
-    <div>LandingPage</div>
-  )
+    <div>
+      <Landing />
+    </div>
+  );
 }
 
-export default LandingPage
+export default LandingPage;
