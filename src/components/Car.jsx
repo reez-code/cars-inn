@@ -1,7 +1,9 @@
+import React from "react";
+
 function Car({ image, description, title,  onAddToLibrary }) {
   const handleClick = () => {
 
-    onAddToLibrary({ image, title, description });
+    onAddToLibrary({ image, description, title });
     
   };
   return (

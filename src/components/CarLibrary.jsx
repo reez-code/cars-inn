@@ -1,21 +1,16 @@
-// CarLibrary.jsx
 import React from "react";
-import Car from "./Car";
+import Car from "../components/Car";
 
 function CarLibrary({ cars, onAddToLibrary }) {
-  return (
-    <div className="grid grid-cols-3 gap-4">
-      {cars.map((car) => (
-        <Car
-          key={car.id}
-          image={car.image}
-          title={car.title}
-          description={car.description}
-          onAddToLibrary={onAddToLibrary}
-        />
-      ))}
-    </div>
-  );
+  const myLibrary = cars.map((car) => {
+    return (
+      <div style={{ margin: "10px" }}>
+        <Car  key={car.id} {...car} onAddToLibrary={onAddToLibrary} />
+      </div>
+    );
+  });
+
+  return <div className="grid grid-cols-4 gap-4 my-10">{myLibrary}</div>;
 }
 
 export default CarLibrary;
