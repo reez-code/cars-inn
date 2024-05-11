@@ -1,4 +1,9 @@
-function Car({ image, description, title }) {
+function Car({ image, description, title,  onAddToLibrary }) {
+  const handleClick = () => {
+
+    onAddToLibrary({ image, title, description });
+    
+  };
   return (
     <>
       <form>
@@ -11,7 +16,8 @@ function Car({ image, description, title }) {
           <div className="px-6 pt-4 pb-2">
             <button
               className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
-              type="submit"
+              type="button"
+              onClick={handleClick}
             >
               Add to Library
             </button>
@@ -23,3 +29,4 @@ function Car({ image, description, title }) {
 }
 
 export default Car;
+
