@@ -1,15 +1,9 @@
-
-function Car({ image, description, title, onAddToLibrary }) {
-  console.log("onAddToLibrary prop:", onAddToLibrary);
-
+function Car({ image, description, title,  onAddToLibrary }) {
   const handleClick = () => {
-    if (typeof onAddToLibrary === "function") {
-      onAddToLibrary({ image, title, description });
-    } else {
-      console.error("onAddToLibrary is not a function");
-    }
-  };
 
+    onAddToLibrary({ image, title, description });
+    
+  };
   return (
     <>
       <form>
