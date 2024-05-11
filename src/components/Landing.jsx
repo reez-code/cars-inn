@@ -1,28 +1,41 @@
-import React from 'react';
-import { useHistory } from 'react-router-dom'; 
-import ReactPlayer from 'react-player';
+import React, { useRef } from "react";
+import { useNavigate } from "react-router-dom"; // Import useNavigate instead of useHistory
+import YouTube from "react-youtube";
 
-const Landing = () => {
-  const history = useHistory();
+function Landing({ videoUrl }) {
+  const navigate = useNavigate(); // Use useNavigate hook
+  const videoRef = useRef(null);
 
-  const handleVideoEnd = () => {
-    // Redirect to the homepage after the video ends
-    history.push('./Routing/Home');
+  const handleVideoEnded = () => {
+    // Redirect to the homepage when the video ends
+    navigate("/homepage");
+  };
+
+  const handleClickOutside = (event) => {
+    // Redirect to the homepage when the user clicks outside the video
+    navigate("/homepage");
   };
 
   return (
-    <div>
-      <ReactPlayer
-        url="https://youtu.be/eNFKHh_MUXY?si=kcfluCDFHi9q8po2"
-        playing={true}
-        controls={false}
-        onEnded={handleVideoEnd}
-        width="100%"
-        height="100%"
-      />
+    <div className="flex justify-center items-center h-screen">
+      <div className="max-w-3xl w-full">
+        <YouTube
+          videoId={videoUrl} // Extract video id from YouTube URL
+          opts={{
+            width: "100%",
+            playerVars: {
+              autoplay: 1,
+              controls: 1,
+              loop: 0,
+            },
+          }}
+          onEnd={handleVideoEnded}
+          onClick={handleClickOutside}
+          ref={videoRef}
+        />
+      </div>
     </div>
   );
-};
+}
 
 export default Landing;
-

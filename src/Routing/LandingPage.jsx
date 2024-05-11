@@ -1,10 +1,15 @@
-import React from 'react'
-import LandingPage from '../components/Landing'
+import React from "react";
+import Landing from "../components/Landing";
 
-function Landing() {
+function LandingPage() {
+  // Extract the video ID from the YouTube URL
+  const videoId = "t9-cMiEDNyk";
+
   return (
-    <div>LandingPage</div>
-  )
+    <div>
+      <Landing videoUrl={videoId} />
+    </div>
+  );
 }
 
-export default Landing;
+export default LandingPage;
