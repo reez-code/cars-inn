@@ -1,19 +1,19 @@
 import React, { useRef } from "react";
-import { useNavigate } from "react-router-dom"; // Import useNavigate instead of useHistory
+import { useNavigate } from "react-router-dom";
 import YouTube from "react-youtube";
 
 function Landing({ videoUrl }) {
-  const navigate = useNavigate(); // Use useNavigate hook
+  const navigate = useNavigate();
   const videoRef = useRef(null);
 
   const handleVideoEnded = () => {
     // Redirect to the homepage when the video ends
-    navigate("/src/Routing/Home.jsx");
+    navigate("/Home");
   };
 
   const handleClickOutside = (event) => {
     // Redirect to the homepage when the user clicks outside the video
-    navigate("/src/Routing/Home.jsx");
+    navigate("/Home");
   };
 
   return (
