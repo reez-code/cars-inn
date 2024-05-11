@@ -8,12 +8,12 @@ function Landing({ videoUrl }) {
 
   const handleVideoEnded = () => {
     // Redirect to the homepage when the video ends
-    navigate("/homepage");
+    navigate("/src/Routing/Home.jsx");
   };
 
   const handleClickOutside = (event) => {
     // Redirect to the homepage when the user clicks outside the video
-    navigate("/homepage");
+    navigate("/src/Routing/Home.jsx");
   };
 
   return (

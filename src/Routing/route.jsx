@@ -1,4 +1,3 @@
-
 import { createBrowserRouter } from "react-router-dom";
 import Home from "./Home";
 import Library from "./Library";
@@ -20,4 +19,4 @@ const router = createBrowserRouter([
     }
 ])
 
-export default router
+export default router;
