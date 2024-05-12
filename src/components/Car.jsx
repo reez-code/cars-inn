@@ -5,15 +5,13 @@ function Car({
   description,
   title,
   onAddToLibrary,
-  addedCars = [],
-  setAddedCars,
 }) {
   const [added, setAdded] = useState(false);
 
   const handleClick = () => {
     onAddToLibrary({ image, description, title });
     setAdded(true);
-    setAddedCars([...addedCars, { image, description, title }]);
+    
   };
 
   return (

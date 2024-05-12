@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Car from "./Car";
 
-function Collection({ cars, onAddToLibrary, addedCars, setAddedCars }) {
+function Collection({ cars, onAddToLibrary, addedCars }) {
   return (
     <div className="grid grid-cols-4 gap-4 my-10">
       {cars.map((car) => (
@@ -10,7 +10,6 @@ function Collection({ cars, onAddToLibrary, addedCars, setAddedCars }) {
           {...car}
           onAddToLibrary={onAddToLibrary}
           addedCars={addedCars}
-          setAddedCars={setAddedCars}
         />
       ))}
     </div>

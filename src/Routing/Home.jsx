@@ -1,4 +1,5 @@
-import { useEffect, useState } from "react";
+import { useState, useEffect } from "react";
+import Car from "../components/Car";
 import Collection from "../components/Collection";
 import Navbar from "../components/Navbar";
 import Add from "../components/Add";
@@ -30,6 +31,10 @@ function Home() {
     return car.title.toLowerCase().includes(searchTerm.toLowerCase());
   });
 
+  const addCars = (car) => {
+    setAddedCars([...addedCars, car]);
+  };
+
   return (
     <div>
       <Navbar onSearch={handleSearch} />
@@ -37,9 +42,9 @@ function Home() {
       <Collection
         cars={filteredCars}
         addedCars={addedCars}
-        setAddedCars={setAddedCars}
         onAddToLibrary={addCars}
       />
+      {location.pathname === "/Library" && <Library cars={addedCars} />}
     </div>
   );
 }
