@@ -6,21 +6,20 @@ import Add from "../components/Add";
 function Home(){
   const [searchTerm, setSearchTerm] = useState("");
   const [cars, setCars] = useState([]);
+  const [addedCars, setAddedCars] = useState([]);
 
   function addCars(carsObj) {
-    setCars([...cars, carsObj]);
+    setAddedCars([...addedCars, carsObj]);
   }
+
   useEffect(() => {
-    fetch("http://localhost:3000/cars",{
-			method: 'GET',
-			headers: {
-				'Content-Type': 'application/json',
-      }
-			})
+    fetch("http://localhost:3000/cars")
       .then((res) => res.json())
-      .then((data) => setCars(data))
+      .then((data) => {
+        setCars(data);
+      })
       .catch((error) => console.error("Error fetching cars:", error));
-  }, [])
+  }, []);
 
   const handleSearch =(term) => {
     setSearchTerm(term)
@@ -34,7 +33,7 @@ function Home(){
     <div>
       <Navbar onSearch={handleSearch}/>
       <Add addCars={addCars} />
-      <Collection cars={filteredCars} />
+      <Collection cars={filteredCars} addedCars={addedCars} setAddedCars={setAddedCars} />
     </div>
   )
 
