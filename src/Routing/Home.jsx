@@ -1,5 +1,5 @@
-import { useState, useEffect } from "react";
-import Car from "../components/Car";
+// Home.jsx
+import React, { useState, useEffect } from "react";
 import Collection from "../components/Collection";
 import Navbar from "../components/Navbar";
 import Add from "../components/Add";
@@ -9,10 +9,6 @@ function Home() {
   const [searchTerm, setSearchTerm] = useState("");
   const [cars, setCars] = useState([]);
   const [addedCars, setAddedCars] = useState([]);
-
-  function addCars(carsObj) {
-    setAddedCars([...addedCars, carsObj]);
-  }
 
   useEffect(() => {
     fetch("http://localhost:3000/cars")
@@ -31,20 +27,22 @@ function Home() {
     return car.title.toLowerCase().includes(searchTerm.toLowerCase());
   });
 
-  const addCars = (car) => {
-    setAddedCars([...addedCars, car]);
+  const addToLibrary = (car) => {
+    console.log("Adding car:", car)
+    setAddedCars(prevCars => [...prevCars, car]);
+    console.log("Added Cars:", addedCars)
   };
 
   return (
     <div>
       <Navbar onSearch={handleSearch} />
-      <Add addCars={addCars} />
+      <Add addCars={addToLibrary} />
       <Collection
         cars={filteredCars}
         addedCars={addedCars}
-        onAddToLibrary={addCars}
+        onAddToLibrary={addToLibrary}
       />
-      {location.pathname === "/Library" && <Library cars={addedCars} />}
+      <Library cars={addedCars} />
     </div>
   );
 }

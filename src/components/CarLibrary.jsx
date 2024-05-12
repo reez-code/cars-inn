@@ -2,7 +2,7 @@
 import React from "react";
 import Car from "./Car";
 
-function CarLibrary({ cars}) {
+function CarLibrary({ cars }) {
   return (
     <div className="grid grid-cols-4 gap-4 my-10">
       {cars.map((car) => (
