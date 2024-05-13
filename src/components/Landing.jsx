@@ -36,7 +36,7 @@ function Landing() {
     <div className="fixed top-0 left-0 w-screen h-screen flex justify-center items-center bg-black">
       <div className="w-85 h-85" ref={videoContainerRef}>
         <ReactPlayer
-          url="https://youtu.be/PqaIkG4WEo8?si=RhEb0oCXkd4NI4yK"
+          url="https://www.youtube.com/watch?v=MlubS7KX0YQ&ab_channel=Creativeflipp"
           width="90vw"
           height="90vh"
           controls={false}
@@ -45,7 +45,6 @@ function Landing() {
         />
       </div>
     </div>
-    
   );
 }
 
