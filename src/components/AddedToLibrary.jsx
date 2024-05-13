@@ -3,11 +3,6 @@ import { useState } from "react";
 function AddedToLibrary({ id, image, description, title, onAddToLibrary }) {
   const [added, setAdded] = useState(false);
 
-  const handleClick = () => {
-    onAddToLibrary({ id, image, description, title });
-    setAdded(true);
-  };
-
   return (
     <>
       <form>
