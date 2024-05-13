@@ -31,17 +31,18 @@ function Home() {
     setAddedCars((prevCars) => [...prevCars, car]);
     console.log("Added Cars:", addedCars);
   };
-
+  function addCars(carsObj) {
+    setCars([...cars, carsObj]);
+  }
   return (
     <div>
-      <Navbar onSearch={handleSearch} addedCars={addedCars}/>
-      <Add addCars={addToLibrary} />
+      <Navbar onSearch={handleSearch} addedCars={addedCars} />
+      <Add addCars={addCars} />
       <Collection
         cars={filteredCars}
         addedCars={addedCars}
         onAddToLibrary={addToLibrary}
       />
-      
     </div>
   );
 }
