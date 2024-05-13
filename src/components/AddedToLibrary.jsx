@@ -1,7 +1,6 @@
-import { useState } from "react";
+import React from "react";
 
-function AddedToLibrary({ id, image, description, title, onAddToLibrary }) {
-  const [added, setAdded] = useState(false);
+function AddedToLibrary({ image, description, title }) {
 
   return (
     <>

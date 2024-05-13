@@ -3,8 +3,6 @@ import React, { useState, useEffect } from "react";
 import Collection from "../components/Collection";
 import Navbar from "../components/Navbar";
 import Add from "../components/Add";
-import Library from "./Library";
-import { Link } from "react-router-dom";
 
 function Home() {
   const [searchTerm, setSearchTerm] = useState("");
