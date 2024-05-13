@@ -37,12 +37,12 @@ function Home() {
     <div>
       <Navbar onSearch={handleSearch} />
       <Add addCars={addToLibrary} />
+      <Library cars={addedCars} />
       <Collection
         cars={filteredCars}
         addedCars={addedCars}
         onAddToLibrary={addToLibrary}
       />
-      <Library cars={addedCars} />
     </div>
   );
 }

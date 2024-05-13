@@ -22,12 +22,6 @@ function Navbar({onSearch}) {
             Home
           </NavLink>
 
-          <NavLink
-            to="/Library"
-            className="text-lg"
-          >
-            Library
-          </NavLink>
         </div>
         <div> <SearchBar onSearch={onSearch}/> </div>
       </div>
