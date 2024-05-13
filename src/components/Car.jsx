@@ -1,11 +1,6 @@
-import { useState } from "react";
-
 function Car({ id, image, description, title, onAddToLibrary }) {
-  const [added, setAdded] = useState(false);
-
   const handleClick = () => {
-    onAddToLibrary({ id, image, description, title });
-    setAdded(true);
+    onAddToLibrary({ id, image, title, description });
   };
 
   return (

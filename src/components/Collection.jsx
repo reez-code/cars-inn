@@ -1,4 +1,3 @@
-import { useState } from "react";
 import Car from "./Car";
 
 function Collection({ cars, onAddToLibrary, addedCars }) {
