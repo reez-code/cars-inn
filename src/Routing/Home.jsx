@@ -28,9 +28,9 @@ function Home() {
   });
 
   const addToLibrary = (car) => {
-    console.log("Adding car:", car)
-    setAddedCars(prevCars => [...prevCars, car]);
-    console.log("Added Cars:", addedCars)
+    console.log("Adding car:", car);
+    setAddedCars((prevCars) => [...prevCars, car]);
+    console.log("Added Cars:", addedCars);
   };
 
   return (

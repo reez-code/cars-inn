@@ -6,9 +6,8 @@ function Library({ cars = [] }) {
   return (
     <div className="container mx-auto">
       <h1 className="text-3xl font-bold my-8">My Library</h1>
-      
+
       <CarLibrary cars={cars} />
-     
     </div>
   );
 }
