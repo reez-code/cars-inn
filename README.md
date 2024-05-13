@@ -32,7 +32,7 @@ Git clone git@github.com:reez-code/cars-inn.git
 
 # Live Link
 
-[Cars-Inn](gh-pages link)
+[Cars-Inn](https://peaceful-horse-12ceb6.netlify.app/)
 
 ## Technologies used
 
