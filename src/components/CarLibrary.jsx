@@ -2,17 +2,11 @@
 import React from "react";
 import Car from "./Car";
 
-function CarLibrary({ cars, onAddToLibrary }) {
+function CarLibrary({ cars }) {
   return (
-    <div className="grid grid-cols-3 gap-4">
+    <div className="grid grid-cols-4 gap-4 my-10">
       {cars.map((car) => (
-        <Car
-          key={car.id}
-          image={car.image}
-          title={car.title}
-          description={car.description}
-          onAddToLibrary={onAddToLibrary}
-        />
+        <Car key={car.id} {...car} />
       ))}
     </div>
   );
