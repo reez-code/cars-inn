@@ -1,12 +1,13 @@
 // CarLibrary.jsx
 import React from "react";
-import Car from "./Car";
+import AddedToLibrary from "./AddedToLibrary";
 
 function CarLibrary({ cars }) {
+  console.log(cars);
   return (
     <div className="grid grid-cols-4 gap-4 my-10">
       {cars.map((car) => (
-        <Car key={car.id} {...car} />
+        <AddedToLibrary key={car.id} {...car} />
       ))}
     </div>
   );

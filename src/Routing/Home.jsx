@@ -3,7 +3,8 @@ import React, { useState, useEffect } from "react";
 import Collection from "../components/Collection";
 import Navbar from "../components/Navbar";
 import Add from "../components/Add";
-import Library from "../components/Library";
+import Library from "./Library";
+import { Link } from "react-router-dom";
 
 function Home() {
   const [searchTerm, setSearchTerm] = useState("");
@@ -35,14 +36,14 @@ function Home() {
 
   return (
     <div>
-      <Navbar onSearch={handleSearch} />
+      <Navbar onSearch={handleSearch} addedCars={addedCars}/>
       <Add addCars={addToLibrary} />
-      <Library cars={addedCars} />
       <Collection
         cars={filteredCars}
         addedCars={addedCars}
         onAddToLibrary={addToLibrary}
       />
+      
     </div>
   );
 }
