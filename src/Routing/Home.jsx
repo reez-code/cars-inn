@@ -10,7 +10,7 @@ function Home() {
   const [addedCars, setAddedCars] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:3000/cars")
+    fetch("https://my-json-server.typicode.com/reez-code/cars-inn/cars")
       .then((res) => res.json())
       .then((data) => {
         setCars(data);
